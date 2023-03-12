@@ -9,6 +9,7 @@
   "author": "Golrang",
   "license": "MIT",
   "devDependencies": {
+    "ts-config": "*",
     "eslint-config-custom": "*",
     "@hookform/resolvers": "^2.9.7",
     "antd": "5.3.0",
