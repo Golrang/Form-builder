@@ -16,18 +16,15 @@ export const Recommender = () => {
     <div className="md:flex sm:block">
       {lable.map((item) => {
         return (
-          <>
-            <Col md={6} sm={24}>
-              <FormInput
-                label={item.lable}
-                name={item.name ?? ''}
-                key={item.lable}
-                disabled
-                // defaultValue={item.name}
-                className="!text-black "
-              />
-            </Col>
-          </>
+          <Col md={6} sm={24} key={item.name}>
+            <FormInput
+              label={item.lable}
+              name={item.name ?? ''}
+              key={item.lable}
+              disabled
+              className="!text-black "
+            />
+          </Col>
         );
       })}
     </div>
