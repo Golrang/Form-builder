@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 cd apps/product
-npm run lint:strict
+npm run lint

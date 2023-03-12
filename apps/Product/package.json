@@ -3,16 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "yarn lint:strict && yarn type && vite",
-    "build": "yarn lint:strict && yarn type && vite build",
+    "dev": "yarn lint && yarn type && vite",
+    "build": "yarn lint && yarn type && vite build",
     "preview": "vite preview",
     "type": "tsc --noEmit --p ./tsconfig.check.json",
     "proxy": "node ./api-server.js",
     "server": "concurrently --kill-others \"yarn proxy\" \"yarn dev\"",
-    "lint": "yarn lint:check",
     "lint:check": "eslint src --ext ts,tsx",
     "lint:fix": "eslint src --fix --ext ts,tsx",
-    "lint:strict": "eslint src --max-warnings=0 --ext ts,tsx"
+    "lint": "eslint src --max-warnings=0 --ext ts,tsx"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.11",

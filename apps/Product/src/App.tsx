@@ -9,8 +9,6 @@ import { router } from "routes/routes";
 const queryClient = new QueryClient();
 
 function App() {
-  console.log("Appsss");
-
   return (
     <ConfigProvider
       theme={{
