@@ -1,2 +1,2 @@
-export * from './FormSelect'
-export * from './from-select.types'
+export * from "./FormSelect";
+export * from "./from-select.types";

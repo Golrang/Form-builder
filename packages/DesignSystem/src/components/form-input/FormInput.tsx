@@ -1,7 +1,7 @@
-import { Form } from 'antd'
-import { Input } from '../../components/input/Input'
-import { useController } from 'react-hook-form'
-import { TFormInput } from './form-input.types'
+import { Form } from "antd";
+import { Input } from "../../components/input/Input";
+import { useController } from "react-hook-form";
+import { TFormInput } from "./form-input.types";
 
 export const FormInput = <G extends string>({
   label,
@@ -11,7 +11,7 @@ export const FormInput = <G extends string>({
   const {
     field,
     fieldState: { error },
-  } = useController({ name })
+  } = useController({ name });
 
   return (
     <Form.Item label={label} name={name}>
@@ -20,5 +20,5 @@ export const FormInput = <G extends string>({
         {error && <div className="text-red-500">{error.message}</div>}
       </>
     </Form.Item>
-  )
-}
+  );
+};

@@ -1,7 +1,7 @@
-import { Form } from 'antd'
-import { TextArea } from '../../components/input/textarea'
-import { useController } from 'react-hook-form'
-import { TFormTextarea } from './form-textarea.types'
+import { Form } from "antd";
+import { TextArea } from "../../components/input/textarea";
+import { useController } from "react-hook-form";
+import { TFormTextarea } from "./form-textarea.types";
 
 export const FormTextArea = <G extends string>({
   label,
@@ -11,7 +11,7 @@ export const FormTextArea = <G extends string>({
   const {
     field,
     fieldState: { error },
-  } = useController({ name })
+  } = useController({ name });
   return (
     <Form.Item label={label} name={name}>
       <>
@@ -19,5 +19,5 @@ export const FormTextArea = <G extends string>({
         {error && <div className="text-red-500">{error.message}</div>}
       </>
     </Form.Item>
-  )
-}
+  );
+};

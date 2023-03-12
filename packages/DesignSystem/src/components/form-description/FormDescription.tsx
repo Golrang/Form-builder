@@ -1,7 +1,7 @@
-import { Form } from 'antd'
-import { Descriptions } from '../../components/description'
-import { useController } from 'react-hook-form'
-import { TFormDescription } from './form-description.types'
+import { Form } from "antd";
+import { Descriptions } from "../../components/description";
+import { useController } from "react-hook-form";
+import { TFormDescription } from "./form-description.types";
 
 export const FormDescription = <G extends string>({
   label,
@@ -11,7 +11,7 @@ export const FormDescription = <G extends string>({
   const {
     field,
     fieldState: { error },
-  } = useController({ name })
+  } = useController({ name });
 
   return (
     <Form.Item label={label} name={name}>
@@ -20,5 +20,5 @@ export const FormDescription = <G extends string>({
         {error && <div className="text-red-500">{error.message}</div>}
       </>
     </Form.Item>
-  )
-}
+  );
+};

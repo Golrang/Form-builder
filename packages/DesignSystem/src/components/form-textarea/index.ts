@@ -1,2 +1,2 @@
-export * from './FormTextArea'
-export * from './form-textarea.types'
+export * from "./FormTextArea";
+export * from "./form-textarea.types";

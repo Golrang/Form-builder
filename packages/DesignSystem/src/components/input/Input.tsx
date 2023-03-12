@@ -27,7 +27,6 @@ import { Input as AntInput } from "antd";
 import { forwardRef } from "react";
 import { TInput } from "./input.types";
 
-
 export const Input = forwardRef(({ ...rest }: TInput, ref?: any) => {
   return <AntInput {...rest} {...{ ref }} />;
 });

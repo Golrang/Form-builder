@@ -1,8 +1,6 @@
-import { Radio as AntRadio } from 'antd'
-import { forwardRef } from 'react'
-import { TRadio } from './radio.types'
-
-
+import { Radio as AntRadio } from "antd";
+import { forwardRef } from "react";
+import { TRadio } from "./radio.types";
 
 export const Radio = forwardRef(({ options, ...rest }: TRadio, ref?: any) => (
   <AntRadio.Group {...rest} {...{ ref }}>
@@ -12,4 +10,4 @@ export const Radio = forwardRef(({ options, ...rest }: TRadio, ref?: any) => (
       </AntRadio>
     ))}
   </AntRadio.Group>
-))
+));

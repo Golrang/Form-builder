@@ -1,5 +1,5 @@
-import { DatePickerProps } from 'antd';
+import { DatePickerProps } from "antd";
 
-export type TJalaliDatePicker = Omit<DatePickerProps, 'ref'> & {
-    rangePicker?: boolean
-}
+export type TJalaliDatePicker = Omit<DatePickerProps, "ref"> & {
+  rangePicker?: boolean;
+};

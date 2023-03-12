@@ -1,7 +1,7 @@
-import { Form } from 'antd'
-import { Radio } from '../../components/radio/Radio'
-import { useController } from 'react-hook-form'
-import { TFormRadio } from './form-radio-types'
+import { Form } from "antd";
+import { Radio } from "../../components/radio/Radio";
+import { useController } from "react-hook-form";
+import { TFormRadio } from "./form-radio-types";
 
 export const FormRadio = <G extends string>({
   name,
@@ -12,7 +12,7 @@ export const FormRadio = <G extends string>({
   const {
     field,
     fieldState: { error },
-  } = useController({ name })
+  } = useController({ name });
 
   return (
     <Form.Item name={name} label={label}>
@@ -21,5 +21,5 @@ export const FormRadio = <G extends string>({
         {error && <p className="text-red-500">{error.message}</p>}
       </>
     </Form.Item>
-  )
-}
+  );
+};

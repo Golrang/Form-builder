@@ -1,2 +1,2 @@
-export * from './FormJalaliDatePicker'
-export * from './form-jalalidatepicker.types'
+export * from "./FormJalaliDatePicker";
+export * from "./form-jalalidatepicker.types";

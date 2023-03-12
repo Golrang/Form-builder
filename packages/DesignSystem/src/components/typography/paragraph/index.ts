@@ -1,2 +1,2 @@
-export * from './Paragraph'
-export * from './paragraph.types'
+export * from "./Paragraph";
+export * from "./paragraph.types";

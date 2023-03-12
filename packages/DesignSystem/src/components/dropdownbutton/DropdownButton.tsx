@@ -1,6 +1,6 @@
-import { Dropdown } from 'antd'
-import { forwardRef } from 'react'
-import { TDropdownButton } from './drop-down-button.types'
+import { Dropdown } from "antd";
+import { forwardRef } from "react";
+import { TDropdownButton } from "./drop-down-button.types";
 
 export const DropdownButton = forwardRef(
   ({ children, label, ...rest }: TDropdownButton, ref?: any) => (
@@ -8,4 +8,4 @@ export const DropdownButton = forwardRef(
       {label}
     </Dropdown.Button>
   )
-)
+);

@@ -1,6 +1,3 @@
-
 export const PeoplePicker = () => {
-  return (
-    <div>PeoplePicker</div>
-  )
-}
+  return <div>PeoplePicker</div>;
+};

@@ -1,3 +1,3 @@
-import { SelectProps } from 'antd'
+import { SelectProps } from "antd";
 
-export type TSelect = Omit<SelectProps, 'ref'>
+export type TSelect = Omit<SelectProps, "ref">;

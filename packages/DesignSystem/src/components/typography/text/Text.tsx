@@ -1,8 +1,8 @@
-import { Typography } from 'antd'
-import { TTextProps } from './text.types'
+import { Typography } from "antd";
+import { TTextProps } from "./text.types";
 
-const { Text: AntText } = Typography
+const { Text: AntText } = Typography;
 
 export const Text = ({ children, ...rest }: TTextProps) => {
-  return <AntText {...rest}>{children}</AntText>
-}
+  return <AntText {...rest}>{children}</AntText>;
+};

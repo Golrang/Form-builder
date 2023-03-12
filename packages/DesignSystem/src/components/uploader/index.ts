@@ -1,2 +1,2 @@
-export * from './Uploader'
-export * from './uploader.types'
+export * from "./Uploader";
+export * from "./uploader.types";

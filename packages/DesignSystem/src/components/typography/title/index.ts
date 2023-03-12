@@ -1,2 +1,2 @@
-export * from './Title'
-export * from './title.types'
+export * from "./Title";
+export * from "./title.types";

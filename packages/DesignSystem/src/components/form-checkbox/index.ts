@@ -1,2 +1,2 @@
-export * from './FormCheckBox'
-export * from './form-checkbox.types'
+export * from "./FormCheckBox";
+export * from "./form-checkbox.types";

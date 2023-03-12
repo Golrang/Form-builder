@@ -1,3 +1,3 @@
-import { DescriptionsProps } from 'antd'
+import { DescriptionsProps } from "antd";
 
-export type TDescription = Omit<DescriptionsProps, 'ref'>
+export type TDescription = Omit<DescriptionsProps, "ref">;

@@ -1,2 +1,2 @@
-export * from './Search'
-export * from './search.types'
+export * from "./Search";
+export * from "./search.types";

@@ -1,7 +1,7 @@
-import { Form } from 'antd'
-import { DatePicker } from '../../components/datepicker/DatePicker'
-import { useController } from 'react-hook-form'
-import { TFormDatePicker } from './form-datepicker.types'
+import { Form } from "antd";
+import { DatePicker } from "../../components/datepicker/DatePicker";
+import { useController } from "react-hook-form";
+import { TFormDatePicker } from "./form-datepicker.types";
 
 export const FormDatePicker = <G extends string>({
   label,
@@ -11,7 +11,7 @@ export const FormDatePicker = <G extends string>({
   const {
     field,
     fieldState: { error },
-  } = useController({ name })
+  } = useController({ name });
   return (
     <Form.Item label={label} name={name}>
       <>
@@ -19,5 +19,5 @@ export const FormDatePicker = <G extends string>({
         {error && <div className="text-red-500">{error.message}</div>}
       </>
     </Form.Item>
-  )
-}
+  );
+};
