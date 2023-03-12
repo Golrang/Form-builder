@@ -15,11 +15,18 @@
   "devDependencies": {
     "eslint-config-custom": "*",
     "turbo": "latest",
-    "prettier": "latest"
+    "prettier": "latest",
+    "husky": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
   "dependencies": {},
-  "packageManager": "yarn@3.0.0"
+  "packageManager": "yarn@3.0.0",
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
+  }
 }
