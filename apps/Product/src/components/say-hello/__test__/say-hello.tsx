@@ -63,7 +63,7 @@ describe("suite", () => {
   });
 
   it("Should return posts when clicking fetch button", async () => {
-    const { debug } = render(<SayHello />);
+    render(<SayHello />);
 
     expect(
       screen.getByRole("heading", {
