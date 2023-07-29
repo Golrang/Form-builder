@@ -114,4 +114,4 @@ function ReactFormGenerator(props) {
   );
 }
 
-export { ReactFormBuilder };
+export { ReactFormBuilder, ReactFormGenerator };

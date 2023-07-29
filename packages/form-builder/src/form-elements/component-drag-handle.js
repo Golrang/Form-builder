@@ -1,21 +1,19 @@
-import React, { PureComponent } from 'react';
-import { DragSource } from 'react-dnd';
-import { getEmptyImage } from 'react-dnd-html5-backend';
-import ItemTypes from '../ItemTypes';
+import React, { PureComponent } from "react";
+import { DragSource } from "react-dnd";
+import { getEmptyImage } from "react-dnd-html5-backend";
+import ItemTypes from "../ItemTypes";
 
 const style = {
   // display: 'inline-block',
   // border: '1px dashed gray',
   // padding: '0.5rem 1rem',
   // backgroundColor: 'white',
-  cursor: 'move',
+  cursor: "move",
 };
 
 const dragHandleSource = {
   beginDrag(props) {
-    const {
-      data, index, onDestroy, setAsChild, getDataById,
-    } = props;
+    const { data, index, onDestroy, setAsChild, getDataById } = props;
     return {
       itemType: ItemTypes.BOX,
       index: data.parentId ? -1 : index,
@@ -45,8 +43,16 @@ class DragHandle extends PureComponent {
   }
 
   render() {
-    const { connectDragSource } = this.props;
-    return connectDragSource(<div className="btn is-isolated" style={style} ><i className="is-isolated fas fa-grip-vertical"></i></div>);
+    const { connectDragSource, isDragging } = this.props;
+
+    console.log("DragHandle:", isDragging);
+    // Add more console.log statements for other monitor properties if needed
+
+    return connectDragSource(
+      <div className="btn is-isolated" style={style}>
+        <i className="is-isolated fas fa-grip-vertical"></i>
+      </div>
+    );
   }
 }
 
@@ -57,5 +63,6 @@ export default DragSource(
     connectDragSource: connect.dragSource(),
     connectDragPreview: connect.dragPreview(),
     isDragging: monitor.isDragging(),
-  }),
+    // Add more monitor data here if needed
+  })
 )(DragHandle);
