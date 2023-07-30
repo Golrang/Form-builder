@@ -15,6 +15,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.1.4",
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
@@ -37,7 +38,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "add": "^2.0.6",
-    "antd": "^5.3.0",
+    "antd": "^5.7.3",
     "antd-jalali": "^1.0.3",
     "axios": "^1.1.4",
     "babel-eslint": "^10.1.0",
@@ -64,7 +65,11 @@
     "file-saver": "^2.0.5",
     "immutability-helper": "^3.1.1",
     "isomorphic-fetch": "^3.0.0",
+    "jalali-moment": "^3.3.11",
+    "jalalidatepicker": "^0.6.0",
     "jquery": "^3.4.1",
+    "moment": "^2.29.4",
+    "moment-jalaali": "^0.10.0",
     "multer": "^1.4.2",
     "node-sass": "^7.0.1",
     "prop-types": "^15.7.2",

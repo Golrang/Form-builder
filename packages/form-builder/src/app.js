@@ -31,6 +31,7 @@ import "../scss/application.scss";
 import "../examples/custom/css/bootstrap.min.css";
 export { ReactFormBuilder } from "./index";
 export { ReactFormGenerator } from "./index";
+export { regg } from "./stores/registry";
 // export { DragSource } from "react-dnd";
 // export { DndProvider } from "react-dnd";
 // export { HTML5Backend } from "react-dnd-html5-backend";
