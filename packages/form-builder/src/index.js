@@ -114,4 +114,17 @@ function ReactFormGenerator(props) {
   );
 }
 
-export { ReactFormBuilder, ReactFormGenerator };
+const FormBuilders = {};
+FormBuilders.ReactFormBuilder = ReactFormBuilder;
+FormBuilders.ReactFormGenerator = ReactFormGenerator;
+FormBuilders.ElementStore = store;
+FormBuilders.Registry = regg;
+
+export default FormBuilders;
+
+export {
+  ReactFormBuilder,
+  ReactFormGenerator,
+  store as ElementStore,
+  regg as Registry,
+};

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactFormBuilder, ReactFormGenerator } from "form-builder-custom";
+import { ReactFormBuilder } from "form-builder-custom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";

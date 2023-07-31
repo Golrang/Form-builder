@@ -29,9 +29,14 @@
 import "../examples/custom/css/font-awesome.min.css";
 import "../scss/application.scss";
 import "../examples/custom/css/bootstrap.min.css";
-export { ReactFormBuilder } from "./index";
-export { ReactFormGenerator } from "./index";
-export { regg } from "./stores/registry";
+// export { ReactFormBuilder } from "./index";
+// export { ReactFormGenerator } from "./index";
+// export { FormBuilders } from "./index";
+export * from "./index";
+// export { ElementStore } from "./index";
+// export { Registry } from "./index";
+// export { CustomDragLayer } from "./form-elements/component-drag-layer";
+// // export { regg } from "./stores/registry";
 // export { DragSource } from "react-dnd";
 // export { DndProvider } from "react-dnd";
 // export { HTML5Backend } from "react-dnd-html5-backend";

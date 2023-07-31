@@ -37,6 +37,7 @@ export const CustomDragLayer = (props) => {
         return null;
     }
   }
+  console.log("isDragging", isDragging);
   if (!isDragging) {
     return null;
   }
